@@ -1,11 +1,12 @@
 using System;
-
-
-class Program
+namespace HelloWorld
 {
-static void Main(string[] args)
-{
-int number = 972;
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			int number = 972;
 		Console.WriteLine("{0} Mission Street", number);
-}
+		}
+	}
 }
