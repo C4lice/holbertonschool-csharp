@@ -132,3 +132,6 @@ $RECYCLE.BIN/
 
 _NCrunch*
 .gitgnore
+
+*-main.cs
+*-main.csproj
