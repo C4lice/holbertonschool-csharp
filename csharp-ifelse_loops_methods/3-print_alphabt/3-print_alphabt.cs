@@ -1,14 +1,15 @@
 using System;
+
 class Program
 {
     static void Main(string[] args)
     {
-        for (int letter = 97 ; letter <= 122 ; letter++)
+        for (int i = 97 ; i <= 122 ; i++)
         {
-            if (letter == 101 || letter == 113)
+            if (i != 101 && i != 113)
             {
-        Console.Write((char)letter);
-            }
+                Console.Write((char)i);  
+            }   
         }
     }
 }
