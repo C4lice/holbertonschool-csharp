@@ -4,7 +4,7 @@ class Program
     static void Main(string[] args)
     {
         string separator = ", ";
-        for (char letter = 0 ; letter <= 99 ; letter++)
+        for (int letter = 0 ; letter <= 99 ; letter++)
         {
             if (letter < 99)
             {
