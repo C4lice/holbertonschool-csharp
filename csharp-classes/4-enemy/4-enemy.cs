@@ -13,6 +13,11 @@ namespace Enemies
         /// </summary>
         public int health;
 
+        /// <summary>
+        /// Represents the zombie's name.
+        /// </summary>
+        private string name = "(No name)";
+
         public Zombie()
         {
             health = 0;
@@ -29,8 +34,8 @@ namespace Enemies
 
         public string Name
         {
-            get => Name;
-            set => Name = value;
+            get => name;
+            set => name = value;
         }
 
         public int GetHealth()
