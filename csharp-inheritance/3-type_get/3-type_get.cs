@@ -5,16 +5,16 @@ class Obj
 {
     public static void Print(object myObj)
     {
-        TypeInfo typeInfo = myObj.GetType().GetTypeInfo();
+        Type type = myObj.GetType();
 
-        Console.WriteLine("Properties:");
-        foreach (PropertyInfo property in typeInfo.GetProperties())
+        Console.WriteLine($"{type.Name} Properties:");
+        foreach (PropertyInfo prop in type.GetProperties())
         {
-            Console.WriteLine(property.Name);
+            Console.WriteLine(prop.Name);
         }
 
-        Console.WriteLine("Methods:");
-        foreach (MethodInfo method in typeInfo.GetMethods())
+        Console.WriteLine($"{type.Name} Methods:");
+        foreach (MethodInfo method in type.GetMethods())
         {
             Console.WriteLine(method.Name);
         }
