@@ -1,14 +1,11 @@
 using System;
 using System.Collections.Generic;
-
 class Animal
 {
 }
-
 class Dog : Animal
 {
 }
-
 class Program
 {
     static void Main(string[] args)
