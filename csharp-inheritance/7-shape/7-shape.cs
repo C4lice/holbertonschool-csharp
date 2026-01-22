@@ -11,37 +11,46 @@ class Shape
 class Rectangle : Shape
 {
     private int width;
+
     private int height;
 
     public int Width
     {
-        get { return width; }
+        get
+        {
+            return width;
+        }
         set
         {
             if (value < 0)
-                throw new ArgumentException("Width must be greater than or equal to 0");
+            {
+                throw new ArgumentException ("Width must be greater than or equal to 0");
+            }
             width = value;
         }
     }
 
     public int Height
     {
-        get { return height; }
+        get
+        {
+            return height;
+        }
         set
         {
             if (value < 0)
-                throw new ArgumentException("Height must be greater than or equal to 0");
+            {
+                throw new ArgumentException ("Height must be greater than or equal to 0");
+            }
             height = value;
         }
     }
 
-    // Masque la méthode Area() de Shape
-    public new int Area()
+    public override int Area()
     {
         return width * height;
     }
 
-    // Redéfinition de ToString()
     public override string ToString()
     {
         return $"[Rectangle] {width} / {height}";
