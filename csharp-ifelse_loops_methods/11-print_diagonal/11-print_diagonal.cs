@@ -5,7 +5,7 @@ class Line
     {
         if (length <= 0)
         {
-            Console.WriteLine();
+            Console.WriteLine("");
             return;
         }
 
@@ -17,5 +17,6 @@ class Line
             }
             Console.WriteLine('\\');
         }
+        Console.WriteLine("");
     }
 }
