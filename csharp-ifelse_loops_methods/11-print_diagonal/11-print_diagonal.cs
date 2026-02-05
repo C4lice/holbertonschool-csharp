@@ -4,7 +4,6 @@ class Line
 {
     public static void PrintDiagonal(int length)
     {
-<<<<<<< HEAD
         if (length <= 0)
         {
             Console.WriteLine("");
@@ -12,9 +11,6 @@ class Line
         }
 
         for (int i = 0; i < length; i++)
-=======
-        if (length > 0)
->>>>>>> ca18ba5d1b7e9b7b7fcfce28f431764956ac312c
         {
             for (int i = 0 ; i < length ; i++)
             {
