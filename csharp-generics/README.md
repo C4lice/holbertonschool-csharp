@@ -87,3 +87,12 @@ If the queue is empty, the method should write Queue is empty to the console and
 Based on 3-peek, add a new method Print() to the class Queue<T> that prints the queue, starting from the head.
 
 If the queue is empty, the method should write Queue is empty to the console
+
+---
+[🔗](https://github.com/C4lice/holbertonschool-csharp/blob/main/csharp-generics/5-concatenate/queue.cs)5. Concatenate
+Based on 4-print, create a method Concatenate() that concatenates all values in the queue only if the queue is of type String or Char.
+
+If queue is empty, print Queue is empty and return null
+If the queue is not of type String or Char, print Concatenate is for a queue of Strings or Chars only. to the console and return null
+
+---
