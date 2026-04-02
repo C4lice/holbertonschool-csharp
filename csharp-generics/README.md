@@ -75,3 +75,11 @@ Add a new method Count() to the class that returns the number of nodes in the Qu
 Based on 1-enqueue, add a new method Dequeue() to the class Queue<T> that removes the first node in the queue and returns its value.
 
 If the queue is empty, the method should write Queue is empty to the console and return the default value of the parameter's type
+
+---
+[🔗](https://github.com/C4lice/holbertonschool-csharp/blob/main/csharp-generics/3-peek/queue.cs)3. Peek
+Based on 2-dequeue, add a new method Peek() to the class Queue<T> that returns the value of the first node of the queue without removing the node.
+
+If the queue is empty, the method should write Queue is empty to the console and return the default value of the parameter's type
+
+---
