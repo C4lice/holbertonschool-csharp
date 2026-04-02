@@ -51,3 +51,23 @@ Queue<T> should not inherit from other classes or interfaces.
 Within Queue<T>, create a new method CheckType() that returns the Queue's type.
 You are not allowed to use System.Collections or System.Collections.Generic for this project.
 NOTE: Your file name for this task will be queue.cs not 0-queue.cs because we will be using this file in subsequent tasks.
+
+---
+[🔗](https://github.com/C4lice/holbertonschool-csharp/blob/main/csharp-generics/1-enqueue/queue.cs)1. Enqueue
+Based on 0-queue, within Queue<T>, create a public class called Node with the following properties:
+
+value: can be of any type, set its initial value to null
+next: must be an object of type Node, set its initial value to null
+Define a constructor that takes a value for a new Node as its only parameter and sets it
+Within Queue<T>, add the following properties:
+
+head: must be an object of type Node
+tail: must be an object of type Node
+count: type int
+Add a new method Enqueue() to the class Queue that creates a new Node and adds it to the end of the queue.
+
+If the queue is empty, the method should make the new node the head of the queue
+count should update every time a new node is added
+Add a new method Count() to the class that returns the number of nodes in the Queue.
+
+---
