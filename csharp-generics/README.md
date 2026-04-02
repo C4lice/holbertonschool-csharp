@@ -71,3 +71,7 @@ count should update every time a new node is added
 Add a new method Count() to the class that returns the number of nodes in the Queue.
 
 ---
+[🔗](https://github.com/C4lice/holbertonschool-csharp/blob/main/csharp-generics/2-dequeue/queue.cs)2. Dequeue
+Based on 1-enqueue, add a new method Dequeue() to the class Queue<T> that removes the first node in the queue and returns its value.
+
+If the queue is empty, the method should write Queue is empty to the console and return the default value of the parameter's type
