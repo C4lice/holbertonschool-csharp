@@ -83,3 +83,7 @@ Based on 2-dequeue, add a new method Peek() to the class Queue<T> that returns t
 If the queue is empty, the method should write Queue is empty to the console and return the default value of the parameter's type
 
 ---
+[🔗](https://github.com/C4lice/holbertonschool-csharp/blob/main/csharp-generics/4-print/queue.cs)4. Print
+Based on 3-peek, add a new method Print() to the class Queue<T> that prints the queue, starting from the head.
+
+If the queue is empty, the method should write Queue is empty to the console
