@@ -1,42 +1,47 @@
 using System;
 
-// Interface IInteractive
-public interface IInteractive
+/// <summary>Base class</summary>
+abstract class Base 
+{
+    string name { get; set; }
+
+/// <summary>Base class constructor</summary>
+    public override string ToString()
+    {
+        return "" + name + " is a " + GetType();
+    }
+}
+
+
+/// <summary>IInteractive interface</summary>
+interface IInteractive
 {
     void Interact();
 }
 
-// Interface IBreakable
-public interface IBreakable
+/// <summary>ICollectable interface</summary>
+interface ICollectable
+{
+    bool isCollected { get; set; }
+
+    void Collect();
+}
+
+/// <summary>IBreakable interface</summary>
+interface IBreakable
 {
     int durability { get; set; }
     void Break();
 }
 
-// Interface ICollectable
-public interface ICollectable
+/// <summary>TestObject class</summary>
+class TestObject : Base, ICollectable, IBreakable, IInteractive
 {
-    bool isCollected { get; set; }
-    void Collect();
-}
-
-// Classe TestObject
-public class TestObject : Base, IInteractive, IBreakable, ICollectable
-{
-    // Implémentation des propriétés
     public int durability { get; set; }
     public bool isCollected { get; set; }
+    public string name { get; set; }
 
-    // Implémentation des méthodes (vides pour cet exercice)
-    public void Interact()
-    {
-    }
-
-    public void Break()
-    {
-    }
-
-    public void Collect()
-    {
-    }
+    public void Interact(){}
+    public void Collect(){}
+    public void Break(){}
 }
