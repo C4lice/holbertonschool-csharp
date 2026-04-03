@@ -1,95 +1,92 @@
 using System;
 
-// Interfaces
-public interface IInteractive
+abstract class Base 
+{
+    public string name { get; set; }
+
+    public override string ToString()
+    {
+        return "" + name + " is a " + GetType();
+    }
+}
+
+interface IInteractive
 {
     void Interact();
 }
 
-public interface IBreakable
+interface ICollectable
+{
+    bool isCollected { get; set; }
+
+    void Collect();
+}
+
+interface IBreakable
 {
     int durability { get; set; }
     void Break();
 }
 
-// Base class
-public class Base
+class Door : Base, IInteractive
 {
-    protected string name;
-
-    public string Name
+    public Door (string name = "Door")
     {
-        get { return name; }
-        set
-        {
-            if (value == "")
-                name = "Unnamed Object";
-            else
-                name = value;
-        }
+        this.name = name;
     }
 
-    public Base(string name = "Unnamed Object")
+    public void Interact()
     {
-        Name = name;
-    }
-
-    public override string ToString()
-    {
-        return $"{name} is a {this.GetType().Name}";
+        Console.WriteLine("You try to open the " + this.name + ". It's locked.");
     }
 }
 
-// Decoration class
-public class Decoration : Base, IInteractive, IBreakable
+class Decoration : Base, IInteractive, IBreakable
 {
-    public int durability { get; set; }
     public bool isQuestItem;
+    public int durability { get; set; }
 
-    // Constructor
-    public Decoration(string name = "Decoration", int durability = 1, bool isQuestItem = false)
-        : base(name)
+    public Decoration (string name = "Decoration", int durability = 1,  bool isQuestItem = false)
     {
         if (durability <= 0)
+        {
             throw new Exception("Durability must be greater than 0");
-
+        }
         this.durability = durability;
+        this.name = name;
         this.isQuestItem = isQuestItem;
     }
 
-    // Interact method
     public void Interact()
     {
-        if (durability <= 0)
+        if (this.durability <= 0)
         {
-            Console.WriteLine($"The {name} has been broken.");
+            Console.WriteLine("The " + this.name + " has been broken.");
         }
         else if (isQuestItem)
         {
-            Console.WriteLine($"You look at the {name}. There's a key inside.");
+            Console.WriteLine("You look at the " + this.name + ". There's a key inside.");
         }
         else
         {
-            Console.WriteLine($"You look at the {name}. Not much to see here.");
+            Console.WriteLine("You look at the " + this.name + ". Not much to see here.");
         }
     }
 
-    // Break method
     public void Break()
     {
-        durability--;
-
-        if (durability > 0)
+        this.durability -= 1;
+        if (this.durability > 0)
         {
-            Console.WriteLine($"You hit the {name}. It cracks.");
+            Console.WriteLine("You hit the " + this.name + ". It cracks.");
         }
-        else if (durability == 0)
+        else if (this.durability == 0)
         {
-            Console.WriteLine($"You smash the {name}. What a mess.");
+            Console.WriteLine("You smash the " + this.name + ". What a mess.");
         }
         else
         {
-            Console.WriteLine($"The {name} is already broken.");
-        }
+            Console.WriteLine("The " + this.name + " is already broken.");
+        } 
     }
 }
