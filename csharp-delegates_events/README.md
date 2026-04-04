@@ -10,7 +10,7 @@ Events (C# Programming Guide) (Read sections "How to Subscribe to and Unsubscrib
 Standard .NET event patterns
 
 ---
-# *Learning Objectives*
+## *Learning Objectives*
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 ---
@@ -24,7 +24,7 @@ What are events and how to use them
 What is asynchronous programming
 
 ---
-# *Requirements*
+## *Requirements*
 ---
 **General**
 Allowed editors: Visual Studio Code
@@ -38,7 +38,7 @@ All your public classes and their members should have XML documentation tags
 All your private classes and members should be documented but without XML documentation tags
 ___
 ---
-## ***Tasks***
+# ***Tasks***
 ---
 0. Universal health
 
