@@ -1,8 +1,6 @@
-## ***C# - Delegates, Events***
-___
+# ***C# - Delegates, Events***
 ---
-# *Resources*
-
+## *Resources*
 ---
 **Read or watch:**
 
@@ -11,7 +9,6 @@ Why Delegates? Why Not Call Methods Directly?
 Events (C# Programming Guide) (Read sections "How to Subscribe to and Unsubscribe from Events", "How to: Raise Base Class Events in Derived Classes", and "How to: Implement Interface Events")
 Standard .NET event patterns
 
-___
 ---
 # *Learning Objectives*
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
@@ -26,10 +23,8 @@ What is a callback
 What are events and how to use them
 What is asynchronous programming
 
-___
 ---
 # *Requirements*
-
 ---
 **General**
 Allowed editors: Visual Studio Code
@@ -46,13 +41,13 @@ ___
 ## ***Tasks***
 ---
 0. Universal health
-___
+
 1. Damage delegation
-___
+
 2. Validation
-___
+
 3. Modified behavior
-___
+
 4. Check yourself
-___
+
 5. Eventful
